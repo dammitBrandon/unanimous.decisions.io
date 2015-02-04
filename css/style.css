@@ -692,7 +692,7 @@ input[type="reset"].alt:active,
 #header
 {
     position: relative;
-    /*border-bottom: solid 2px #e5e5e5;*/
+    border-bottom: solid 2px #e5e5e5;
     box-shadow: inset 0px -8px 0px 0px #fff, inset 0px -10px 0px 0px #e5e5e5;
 }
 
@@ -704,10 +704,10 @@ input[type="reset"].alt:active,
     text-shadow: 0.05em 0.075em 0 rgba(0,0,0,0.1);
 }
 
-#header , #logo 
-{
-    border: 0;
-}
+/*#header , #logo */
+/*{*/
+    /*border: 0;*/
+/*}*/
 
 #header p
 {

@@ -8,6 +8,10 @@
     {% include header.html %}
 
     <div class="page-content">
+      {% if page.url == "/index.html" %}
+        {% include testing.html %}
+      {% endif %}
+      
       <div class="wrapper">
         {{ content }}
       </div>
