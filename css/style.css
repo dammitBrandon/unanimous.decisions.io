@@ -696,7 +696,7 @@ input[type="reset"].alt:active,
     box-shadow: inset 0px -8px 0px 0px #fff, inset 0px -10px 0px 0px #e5e5e5;
 }
 
-#header #logo
+#header h1 a
 {
     font-family: 'Arvo';
     font-weight: 700;
@@ -704,7 +704,7 @@ input[type="reset"].alt:active,
     text-shadow: 0.05em 0.075em 0 rgba(0,0,0,0.1);
 }
 
-#header #logo a
+#header , #logo 
 {
     border: 0;
 }
