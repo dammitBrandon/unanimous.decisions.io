@@ -557,7 +557,7 @@ input[type="reset"].alt:active,
 {
 }
 
-.box.excerpt .date
+.box.excerpt .date, .box.excerpt .staff
 {
     background: #878787;
     color: #fff;

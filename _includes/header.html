@@ -3,17 +3,13 @@
   <div id="header" class="wrapper">
 
     <h1 id="logo"><a class="" href="{{ site.baseurl }}/">{{ site.title }}</a></h1>
+
     <p>{{ site.description }}</p>
-    
+
     <nav id="nav">
       <ul>
-        <li><a class="icon fa-home page-link" href="#"><span>Home</span></a></li>
-        <li><a class="icon fa-home page-link" href="{{ '/about/' | prepend: site.baseurl }}"><span>About</span></a></li>
-        {% for page in site.pages %}
-        {% if page.title %}
-          <li><a class="icon fa-home page-link" href="{{ page.url | prepend: site.baseurl }}"><span>{{ page.title }}</span></a></li>
-        {% endif %}
-        {% endfor %}
+        <li><a class="icon fa-home page-link" href="{{site.baseurl}}/"><span>Home</span></a></li>
+        <li><a class="icon fa-home page-link" href="{{site.baseurl}}/about"><span>About Us</span></a></li>
       </ul>
     </nav>
 
