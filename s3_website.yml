@@ -1,7 +1,7 @@
-s3_id: AKIAIPQES2RLG4QZABHQ
-s3_secret: 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
-s3_bucket: unanimousdecision.io
-cloudfront_distribution_id: E2TVJSKRKO7BDU
+s3_id: AKIAI6HBGRUSWHWZH3WQ
+s3_secret: AfEyHWCmnOe1aE3ZvornxhlCK+kc6E6xktTyj54h
+s3_bucket: unanimousdecisions.io
+cloudfront_distribution_id: E1X9A4N90AHQ5P
 
 # Below are examples of all the available configurations.
 # See README for more detailed info on each of them.
