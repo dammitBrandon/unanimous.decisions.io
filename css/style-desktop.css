@@ -335,9 +335,11 @@
 	{
 	}
 
-		#content > section,
+        #content > section,
 		#content > article
 		{
+            border-top: solid 2px #e5e5e5;
+            box-shadow: inset 0px 8px 0px 0px #fff, inset 0px 10px 0px 0px #e5e5e5;
 			margin: 5em 0 0 0;
 			padding: 5em 0 0 0;
 		}
@@ -345,9 +347,19 @@
 		#content > section:first-child,
 		#content > article:first-child
 		{
-			margin: 0;
-			padding: 0;
+            border-top: 0;
+            box-shadow: none;
+            margin: 0;
+            padding: 0;
 		}
+
+        /*#content > section:last-child,*/
+        /*#content > article:last-child {*/
+            /*border-bottom: solid 2px #e5e5e5;*/
+            /*box-shadow: inset 0px 8px 0px 0px #fff, inset 0px 10px 0px 0px #e5e5e5;*/
+            /*margin: 0 0 5em 0;*/
+            /*padding: 0 0 5em 0;*/
+        /*}*/
 	
 /*********************************************************************************/
 /* Sidebar                                                                       */
