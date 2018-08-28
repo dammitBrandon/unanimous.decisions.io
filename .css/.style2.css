@@ -136,11 +136,14 @@ article:last-child {
     margin-bottom: 0;
 }
 
+/* Bios */
+
+
+
 /* Image */
 
 .image {
-    display: inline-block;
-    border: solid 6px #ebebeb !important;
+    /*border: solid 6px #ebebeb !important;*/
     -moz-transition: opacity 0.25s ease-in-out;
     -webkit-transition: opacity 0.25s ease-in-out;
     -o-transition: opacity 0.25s ease-in-out;
@@ -153,8 +156,8 @@ a.image:hover {
 }
 
 .image img {
-    display: block;
-    width: 100%;
+    display: inline-block;
+    width: 30%;
 }
 
 .image.fit {
