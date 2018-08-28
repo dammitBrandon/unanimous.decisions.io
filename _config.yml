@@ -20,7 +20,7 @@ description: > # this means to ignore newlines until "baseurl:"
   A community based program that provides an avenue for youth to
   implement growth, self-worth, relationships, management and leadership.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://www.unanimousdecision.com" # the base hostname & protocol for your site
+url: "http://www.unanimousdecisions.io" # the base hostname & protocol for your site
 twitter_username: jekyllrb
 github_username:  jekyll
 
