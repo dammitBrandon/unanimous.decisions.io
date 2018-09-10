@@ -1,0 +1,76 @@
+/* Header */
+
+    #header {
+      position: relative;
+      background: #fff;
+      text-align: center;
+
+      > .container {
+        padding: 12em 0 7em 0;
+        border-bottom: solid 2px #e5e5e5;
+        box-shadow: inset 0px -8px 0px 0px #fff, inset 0px -10px 0px 0px #e5e5e5;
+      }
+
+      h1 {
+        font-family: 'Arvo';
+        font-weight: 700;
+        color: #ed786a;
+        text-shadow: 0.05em 0.075em 0 rgba(0, 0, 0, 0.1);
+        font-size: 3em;
+        letter-spacing: 13px;
+
+        a {
+          border: 0;
+        }
+      }
+
+      p {
+        text-transform: uppercase;
+        font-weight: 400;
+        color: #888;
+        margin: 2.5em 0 0 0;
+        font-size: 0.85em;
+        letter-spacing: 3px;
+        text-align: center;
+      }
+
+      @include breakpoint('<=xlarge') {
+        background-color: sandybrown;
+      }
+
+      @include breakpoint('<=large') {
+        background-color: deeppink;
+        > .container {
+          padding: 10em 0 5em 0;
+        }
+
+        h1 {
+          font-size: 2.5em;
+        }
+      }
+
+      @include breakpoint('<=medium') {
+        background-color: cyan;
+        > .container {
+          padding: 8em 0 7em 0;
+        }
+      }
+
+      @include breakpoint('<=small') {
+        background-color: black;
+        > .container {
+          padding: 6em 0 4em 0;
+        }
+
+        h1 {
+          font-size: 2em;
+          letter-spacing: 8px;
+          line-height: 1.325em;
+        }
+
+        p {
+          margin: 1.25em 0 0 0;
+          letter-spacing: 2px;
+        }
+      }
+    }

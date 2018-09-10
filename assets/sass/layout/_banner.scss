@@ -1,0 +1,88 @@
+/* Banner */
+
+    #banner {
+      position: relative;
+      overflow: hidden;
+      background: #fff;
+      color: #fff;
+      text-align: center;
+      border-top: solid 2px #e5e5e5;
+      border-bottom: solid 2px #e5e5e5;
+      box-shadow: inset 0px -8px 0px 0px #fff,
+      inset 0px 8px 0px 0px #fff;
+      position: relative;
+      text-transform: uppercase;
+      background: url('../../images/banner.jpg');
+      background-size: cover;
+      padding: 10em 0;
+
+      p {
+        font-weight: 400;
+        font-size: 2em;
+        line-height: 1.5em;
+        letter-spacing: 4px;
+        text-align: center;
+        margin: 0;
+      }
+
+      strong {
+        color: inherit;
+      }
+
+      > .container {
+        position: relative;
+
+        &:before, &:after {
+          content: '';
+          display: block;
+          position: absolute;
+          top: 50%;
+          width: 35px;
+          height: 141px;
+          margin-top: -70px;
+          background: url('images/bracket.svg');
+          opacity: 0.15;
+        }
+
+        &:before {
+          left: 0;
+        }
+
+        &:after {
+          @include vendor('transform', 'scaleX(-1)');
+          right: 0;
+        }
+      }
+
+      @include breakpoint('<=xlarge') {}
+
+      @include breakpoint('<=large') {
+        padding: 8em 0;
+
+        > .container {
+          padding: 0 4em;
+
+          br {
+            display: none;
+          }
+        }
+      }
+
+      @include breakpoint('<=medium') {}
+
+      @include breakpoint('<=small') {
+        padding: 5em 0;
+
+        > .container {
+          padding: 0;
+
+          &:before, &:after {
+            display: none;
+          }
+        }
+
+        p {
+          font-size: 1.25em;
+        }
+      }
+    }

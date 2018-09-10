@@ -1,0 +1,41 @@
+///
+/// Indivisible by Pixelarity
+/// pixelarity.com | hello@pixelarity.com
+/// License: pixelarity.com/license
+///
+
+/* Actions */
+
+    ul.actions {
+      margin-top: 2.5em;
+      clear: both;
+      list-style: none;
+      padding-left: 0;
+
+      li {
+        padding-left: 0;
+        display: inline-block;
+        margin: 0 0 0 1em;
+
+        &:first-child {
+          margin-left: 0;
+        }
+      }
+
+      @include breakpoint('<=xlarge') {}
+
+      @include breakpoint('<=large') {}
+
+      @include breakpoint('<=medium') {}
+
+      @include breakpoint('<=small') {
+        li {
+          display: block;
+          margin: 1em 0 0 0;
+
+          &:first-child {
+            margin-top: 0;
+          }
+        }
+      }
+    }

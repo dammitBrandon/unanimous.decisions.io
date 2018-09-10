@@ -1,0 +1,43 @@
+
+/* Footer */
+    #footer {
+      position: relative;
+      overflow: hidden;
+      border-top: solid 2px #e5e5e5;
+      background: #f0f0f0;
+      padding: 6em 0 8em 0;
+
+      form {
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        select,
+        textarea {
+          background: #f7f7f7;
+
+          &:focus {
+            background: #fff;
+          }
+        }
+      }
+
+      h2 {
+        text-align: center;
+      }
+
+      @include breakpoint('<=xlarge') {}
+
+      @include breakpoint('<=large') {
+        padding: 4em 0;
+      }
+
+      @include breakpoint('<=medium') {}
+
+      @include breakpoint('<=small') {
+        padding: 2em 0;
+
+        ul.icons {
+          margin-bottom: 0;
+        }
+      }
+    }

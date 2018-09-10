@@ -1,0 +1,18 @@
+/* Links */
+
+ul.links {
+  list-style: none;
+  padding-left: 0;
+
+  li {
+    display: inline;
+    border-left: solid 1px #d0d0d0;
+    padding-left: 1em;
+    margin: 0 0 0 1em;
+
+    &:first-child {
+      margin-left: 0;
+      padding-left: 0;
+    }
+  }
+}

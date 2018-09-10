@@ -1,0 +1,23 @@
+/* Container */
+
+  .container {
+    margin: 0 auto;
+    max-width: 100%;
+    width: 70em;
+
+    @include breakpoint('<=xlarge') {
+      width: 68em;
+    }
+
+    @include breakpoint('<=large') {
+      width: calc(100% - 80px);
+    }
+
+    @include breakpoint('<=medium') {
+      width: calc(100% - 100px);
+    }
+
+    @include breakpoint('<=small') {
+      width: calc(100% - 40px);
+    }
+  }

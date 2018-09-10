@@ -1,19 +1,15 @@
-<header id="header-wrapper" class="">
+<header id="header">
+    <div class="container">
+        <h1 id="logo"><a class="" href="{{ site.baseurl }}/">{{ site.title }}</a></h1>
 
-  <div id="header" class="wrapper">
+        <p>{{ site.description }}</p>
 
-    <h1 id="logo"><a class="" href="{{ site.baseurl }}/">{{ site.title }}</a></h1>
-
-    <p>{{ site.description }}</p>
-
-    <nav id="nav">
-      <ul>
-        <li><a class="icon fa-home page-link" href="{{site.baseurl}}/"><span>Home</span></a></li>
-        <li><a class="icon fa-home page-link" href="{{site.baseurl}}/about"><span>About Us</span></a></li>
-          <li><a class="icon fa-home page-link" href="{{site.baseurl}}/our_team"><span>Our Team</span></a></li>
-      </ul>
-    </nav>
-
-  </div>
-
+        <nav id="nav">
+            <ul>
+                <li><a class="icon fa-home page-link" href="{{site.baseurl}}/"><span>Home</span></a></li>
+                <li><a class="icon fa-question-circle page-link" href="{{site.baseurl}}/about"><span>About Us</span></a></li>
+                <li><a class="icon fa-group page-link" href="{{site.baseurl}}/our_team"><span>Our Team</span></a></li>
+            </ul>
+        </nav>
+    </div>
 </header>

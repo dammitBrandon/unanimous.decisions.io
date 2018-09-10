@@ -1,0 +1,36 @@
+/* About Us */
+
+  #about-us {
+
+    .image {
+      @include vendor('transition', 'opacity 0.25s ease-in-out');
+      display: inline-block;
+      border: solid 6px #ebebeb !important;
+
+
+      img {
+        //border-radius: _size(border-radius);
+        display: block;
+        height: -webkit-fill-available;
+        width: 100%;
+      }
+
+
+      &.featured {
+        display: block;
+        width: 100%;
+        margin: 0 0 3.5em 0;
+        max-height: 14.5em;
+      }
+
+    }
+
+
+    @include breakpoint('<=xlarge') {}
+
+    @include breakpoint('<=large') {}
+
+    @include breakpoint('<=medium') {}
+
+    @include breakpoint('<=small') {}
+  }

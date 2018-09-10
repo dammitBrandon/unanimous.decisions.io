@@ -1,22 +1,66 @@
+//// Misc.
+//$misc: (
+//        z-index-base:	10000
+//);
+//
+//// Duration.
+//$duration: (
+//        navPanel: 0.5s
+//);
+//
+//// Size.
+//$size: (
+//        navPanel: 275px
+//);
+//
+//// Font.
+//$font: (
+//);
+//
+//// Palette.
+//$palette: (
+//);
+
 // Misc.
-	$misc: (
-		z-index-base:	10000
-	);
+$misc: (
+        z-index-base:		10000
+);
 
 // Duration.
-	$duration: (
-		navPanel: 0.5s
-	);
+$duration: (
+        nav:				0.5s,
+        transition:			0.2s,
+        navPanel:           0.5s
+);
 
 // Size.
-	$size: (
-		navPanel: 275px
-	);
+$size: (
+        navPanel:           275px,
+        border-radius:		8px,
+        element-height:		2.75em,
+        element-margin:		2em
+);
 
 // Font.
-	$font: (
-	);
+$font: (
+        family:				('Source Sans Pro', Helvetica, sans-serif),
+        family-fixed:		('Courier New', monospace),
+        family-heading:		('Source Sans Pro', sans-serif),
+        weight:				300,
+        weight-bold:		500,
+        weight-heading:		700,
+        letter-spacing:		0.05em,
+        letter-spacing-alt:	0.25em
+);
 
 // Palette.
-	$palette: (
-	);
+$palette: (
+        bg:					#ffffff,
+        bg-alt:				#f5f6f7,
+        fg:					#7f888f,
+        fg-bold:			#888,
+        fg-light:			#9fa3a6,
+        border:				rgba(210,215,217,0.75),
+        border-bg:			transparentize(#e6ebed, 0.75),
+        accent:				#ed786a
+);

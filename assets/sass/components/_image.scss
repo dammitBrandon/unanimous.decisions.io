@@ -1,0 +1,158 @@
+
+
+/* Image */
+
+.image {
+  @include vendor('transition', 'opacity 0.25s ease-in-out');
+  //border-radius: _size(border-radius);
+  border: 0;
+  display: inline-block;
+  position: relative;
+
+  &:hover {
+    opacity: 0.9;
+  }
+
+  img {
+    //border-radius: _size(border-radius);
+    display: block;
+    width: 100%;
+  }
+
+  &.left,
+  &.right {
+    max-width: 40%;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &.left {
+    float: left;
+    position: relative;
+    padding: 0 1.5em 1em 0;
+    top: 0.25em;
+  }
+
+  &.right {
+    float: right;
+    position: relative;
+    padding: 0 0 1em 1.5em;
+    top: 0.25em;
+  }
+
+  &.fit {
+    display: block;
+    margin: 0 0 _size(element-margin) 0;
+    width: 100%;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &.main {
+    display: block;
+    margin: 0 0 (_size(element-margin) * 1.5) 0;
+    width: 100%;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &.centered {
+    display: block;
+    margin: 0 0 2em 0;
+
+    img {
+      margin: 0 auto;
+      width: auto;
+    }
+  }
+
+  &.featured {
+    display: block;
+    width: 100%;
+    margin: 0 0 3.5em 0;
+
+    &.banner {
+      height: 14.5em;
+    }
+  }
+
+  @include breakpoint('<=large') {
+    &.left {
+      max-width: 50%;
+    }
+
+    &.right {
+      max-width: 50%;
+    }
+  }
+
+  @include breakpoint('<=large') {
+
+    &.banner {
+      height: 13.75em;
+    }
+  }
+
+  @include breakpoint('<=medium') {
+    display: block;
+    margin: 0 0 (_size(element-margin) * 1.5) 0;
+    width: 100%;
+
+    img {
+      width: 100%;
+    }
+
+    &.fit {
+      img {
+        height: auto;
+      }
+    }
+
+    &.banner {
+      height: 16.75em;
+    }
+  }
+
+  @include breakpoint('<=small') {
+    display: block;
+    margin: 0 0 2em 0;
+
+    img {
+      margin: 0 auto;
+      width: 100%;
+    }
+
+    &.featured {
+      //padding: 2em 10em;
+      margin: 0 0 1.5em 0;
+    }
+
+    &.left {
+      max-width: 35%;
+    }
+
+    &.right {
+      max-width: 35%;
+    }
+  }
+}
+
+a.image {
+  overflow: hidden;
+
+  img {
+    @include vendor('transition', 'transform #{_duration(transition)} ease');
+  }
+
+  &:hover {
+    img {
+      @include vendor('transform', 'scale(1.075)');
+    }
+  }
+}
