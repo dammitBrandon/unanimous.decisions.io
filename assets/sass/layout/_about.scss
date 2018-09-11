@@ -1,6 +1,6 @@
 /* About Us */
 
-  #about-us {
+  .about-us {
 
     .image {
       @include vendor('transition', 'opacity 0.25s ease-in-out');
