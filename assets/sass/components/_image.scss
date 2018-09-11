@@ -4,8 +4,9 @@
 
 .image {
   @include vendor('transition', 'opacity 0.25s ease-in-out');
+  border: solid 6px #ebebeb;
   //border-radius: _size(border-radius);
-  border: 0;
+  //border: 0;
   display: inline-block;
   position: relative;
 
@@ -82,6 +83,10 @@
     }
   }
 
+  &.staff {
+    border: none;
+  }
+
   @include breakpoint('<=large') {
     &.left {
       max-width: 50%;
@@ -131,6 +136,14 @@
     &.featured {
       //padding: 2em 10em;
       margin: 0 0 1.5em 0;
+
+      &.banner {
+        height: 19.5em;
+
+        img {
+          height: -webkit-fill-available;
+        }
+      }
     }
 
     &.left {

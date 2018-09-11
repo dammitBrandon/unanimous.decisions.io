@@ -149,14 +149,21 @@ br.clear {
     font-size: 11pt;
   }
 
-  h2, h3, h4, h5, h6 {
+  h2, h3, h4 {
     font-size: 1.2em;
     letter-spacing: 2px;
     text-align: center;
-    margin: 0 0 1em 0;
+    margin: 0 0 0.25em 0;
 
     br {
       display: none;
     }
+  }
+
+  h5, h6 {
+    font-size: 0.9em;
+    letter-spacing: 2px;
+    text-align: center;
+    margin: 0 0 1em 0;
   }
 }
