@@ -34,12 +34,9 @@
         text-align: center;
       }
 
-      @include breakpoint('<=xlarge') {
-        background-color: sandybrown;
-      }
+      @include breakpoint('<=xlarge') {}
 
       @include breakpoint('<=large') {
-        background-color: deeppink;
         > .container {
           padding: 10em 0 5em 0;
         }
@@ -50,14 +47,12 @@
       }
 
       @include breakpoint('<=medium') {
-        background-color: cyan;
         > .container {
           padding: 8em 0 7em 0;
         }
       }
 
       @include breakpoint('<=small') {
-        background-color: black;
         > .container {
           padding: 6em 0 4em 0;
         }
